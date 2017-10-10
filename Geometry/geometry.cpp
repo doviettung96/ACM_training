@@ -51,3 +51,7 @@ bool isInside(Point polygon[], int n, Point p) {
 	}
 	return nIntersections % 2 == 1;
 }
+
+int calculateSquareDistance(Point p, Point q){
+	return (p.x - q.x) * (p.x - q.x) + (p.y - q.y) * (p.y - q.y);
+}
